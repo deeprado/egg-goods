@@ -1,0 +1,142 @@
+{% extends "common.nj" %}
+
+{% block mainContent %}
+
+
+  <!-- Headerwrap -->
+  <div id="headerwrap-2">
+    <div class="container">
+      <div class="row">
+        <h1>Welcome to our site.<br/> <b>GOOD</b> to see you.</h1>
+      </div>
+    </div>
+  </div>
+  <!-- /Headerwrap -->
+
+  <!-- Call To Action -->
+  <div id="cta">
+    <div class="container centered">
+      <h3>Welcome to our new corporate site.</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <br>
+      <a href="about.html"><button class="btn btn-embossed btn-primary">Meet Our History</button></a>
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- /cta -->
+
+
+  <!-- Services Section -->
+  <div class="container sinfo">
+    <div class="row centered">
+      <h4>Welcome, we are <b>GOOD</b>, a flat design, responsive & super flexible theme</h4>
+      <br>
+      <br>
+      <div class="col-lg-3">
+        <p><img src="/public/img/icons/touch.svg" alt=""></p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p><button class="btn btn-primary">Read More</button></p>
+      </div>
+      <!-- col-lg-3 -->
+
+      <div class="col-lg-3">
+        <p><img src="/public/img/icons/spray.svg" alt=""></p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p><button class="btn btn-primary">Read More</button></p>
+      </div>
+      <!-- col-lg-3 -->
+
+      <div class="col-lg-3">
+        <p><img src="/public/img/icons/rocket.svg" alt=""></p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p><button class="btn btn-primary">Read More</button></p>
+      </div>
+      <!-- col-lg-3 -->
+
+      <div class="col-lg-3">
+        <p><img src="/public/img/icons/pencil.svg" alt=""></p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p><button class="btn btn-primary">Read More</button></p>
+      </div>
+      <!-- col-lg-3 -->
+
+    </div>
+    <!-- /row -->
+    <br>
+    <hr>
+  </div>
+  <!-- /container -->
+
+  <!-- container -->
+  <div class="container">
+    <div class="row">
+      <br>
+      <div class="col-lg-6">
+        <img class="img-responsive" src="/public/img/half-mac2.png" alt="" />
+      </div>
+      <!-- /col-lg-6 -->
+
+      <div class="col-lg-6">
+        <h4>We Craft <b>Awesome</b> Sites</h4>
+        <div class="sinfo">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+      </div>
+      <!-- /col-lg-6 -->
+
+    </div>
+    <!-- /row -->
+    <br>
+  </div>
+  <!-- container -->
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+
+  <div id="g">
+    <div class="container">
+      <div class="row">
+        <h4 class="centered">What We Are <b>Talking?</b></h4>
+        <br>
+        <div class="col-md-4">
+          <div class="bc">
+            <img class="img-responsive" src="/public/img/bc01.jpg" alt="">
+            <p><a href="#">Blog Post 1</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text...</p>
+            <p>
+              <date>Sep. 24, 2013</date>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="bc">
+            <img class="img-responsive" src="/public/img/bc02.jpg" alt="">
+            <p><a href="#">Blog Post 2</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text...</p>
+            <p>
+              <date>Sep. 24, 2013</date>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="bc">
+            <img class="img-responsive" src="/public/img/bc03.jpg" alt="">
+            <p><a href="#">Blog Post 3</a></p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text...</p>
+            <p>
+              <date>Sep. 24, 2013</date>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </div>
+  <!-- grey wrap -->
+
+  
+{% endblock %}

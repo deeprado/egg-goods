@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ name }}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="/public/img/favicon.png" rel="icon">
+    <link href="/public/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Bootstrap CSS File -->
+    <link href="/public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="/public/lib/flat-ui/css/flat-ui.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="/public/css/style.css" rel="stylesheet">
+
+     {% block customCss %}{% endblock %}
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">GOOD</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="/">首頁</a>
+            </li>
+            <li>
+              <a href="/about">关于我们</a>
+            </li>
+            <li class="active">
+              <a href="/contact">联系方式</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">功能展示 <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/service">服务</a>
+                </li>
+                <li>
+                  <a href="/price">价格</a>
+                </li>
+                <li>
+                  <a href="/testimonials">感言</a>
+                </li>
+                <li>
+                  <a href="/team">团队</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">作品集 <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                  <a href="portfolio4.html">Portfolio 4 Columns</a>
+                </li>
+                <li>
+                  <a href="project-single.html">Single Project</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/blog">博客</a>
+            </li>
+            <li>
+              <a href="/faq">帮助</a>
+            </li>
+
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <section class="mainContent">
+      {% block mainContent %}{% endblock %}
+    </section>
+
+    <!-- FOOTER -->
+    <div id="f">
+      <div class="container">
+        <div class="row">
+          <h5 class="centered">联系信息</h5>
+          <br>
+
+          <div class="col-lg-4">
+            <p>关于 <b>GOOD</b> STUDIO</p>
+            <p>
+              <small>Lorem Ipsum的段落有很多变化，但大多数都因注入幽默感或看起来有些难以置信的随机单词而以某种形式发生了变化。</small>
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <p>办公室</p>
+            <p>
+              <small>
+						Richardson Ave. 984<br/>
+						London, UK.<br/>
+						+44 3893-4904
+					</small>
+            </p>
+          </div>
+
+          <div class="col-lg-4">
+            <p>通讯方式</p>
+            <p>
+              <small>每个月我们都会收集设计界的精华，并与您分享。</small>
+            </p>
+            <p><input type="text" placeholder="你的邮箱地址" class="form-control flat"/></p>
+          </div>
+
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /Footer -->
+
+    <div id="copyrights">
+      <div class="container">
+        <p> &copy; 版权 <strong>Good</strong>. 保留所有权利  </p>
+        <div class="credits"></div>
+      </div>
+    </div>
+    <!-- / copyrights -->
+
+    <!-- JavaScript Libraries -->
+    <script src="/public/lib/jquery/jquery.min.js"></script>
+    <script src="/public/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/lib/php-mail-form/validate.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="/public/js/main.js"></script>
+
+  </body>
+</html>

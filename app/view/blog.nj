@@ -1,0 +1,134 @@
+{% extends "common.nj" %}
+
+{% block mainContent %}
+
+  <!-- BLOG PAGE -->
+
+  <div class="container">
+    <div class="row">
+      <!-- Content Section -->
+      <div class="col-lg-8 sinfo">
+
+        <div class="blogcontent">
+          <!-- First Post -->
+          <img class="img-responsive" src="/public/img/blog-post02.jpg" alt="">
+          <h6>FLAT DESIGN ALWAYS</h6>
+          <small><span class="fui-user"></span> Carlos Alvarez | <span class="fui-calendar"></span> Sep 25, 2013 | <span class="fui-chat"></span> 4 Comments</small>
+          <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+          <button class="btn btn-primary btn-wide">Read More</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="blogcontent">
+          <!-- Second Post -->
+          <iframe width="100%" height="300" src="http://www.youtube.com/embed/3bEtJgnd86M?rel=0" frameborder="0" allowfullscreen></iframe>
+          <h6>POST WITH A VIDEO</h6>
+          <small><span class="fui-user"></span> Carlos Alvarez | <span class="fui-calendar"></span> Sep 25, 2013 | <span class="fui-chat"></span> 4 Comments</small>
+          <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+          <button class="btn btn-primary btn-wide">Read More</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="blogcontent">
+          <!-- Thirdt Post -->
+          <img class="img-responsive" src="/public/img/blog-post01.jpg" alt="">
+          <h6>ANOTHER IMAGE POST</h6>
+          <small><span class="fui-user"></span> Carlos Alvarez | <span class="fui-calendar"></span> Sep 25, 2013 | <span class="fui-chat"></span> 4 Comments</small>
+          <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
+          <button class="btn btn-primary btn-wide">Read More</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="pagination">
+          <ul>
+            <li class="previous"><a href="#fakelink" class="fui-arrow-left"></a></li>
+            <li class="active"><a href="#fakelink">1</a></li>
+            <li class=""><a href="#fakelink">2</a></li>
+            <li><a href="#fakelink">3</a></li>
+            <li><a href="#fakelink">4</a></li>
+            <li><a href="#fakelink">5</a></li>
+            <li class="pagination-dropdown dropup">
+              <i class="dropdown-arrow"></i>
+              <a href="#fakelink" class="dropdown-toggle" data-toggle="dropdown">
+	                    <i class="fui-triangle-up"></i>
+	                  </a>
+              <ul class="dropdown-menu">
+                <li><a href="#fakelink">10–20</a></li>
+                <li><a href="#fakelink">20–30</a></li>
+                <li><a href="#fakelink">40–50</a></li>
+              </ul>
+            </li>
+            <li class="next"><a href="#fakelink" class="fui-arrow-right"></a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- col-lg-8 / Content Section -->
+
+
+
+      <!-- Sidebar Section -->
+      <div class="col-lg-4 sidebar">
+        <h6><span class="fui-arrow-right"></span> 分类</h6>
+        <p>
+          <span class="fui-folder"></span> Wordpress<br/>
+          <span class="fui-folder"></span> 网站设计<br/>
+          <span class="fui-folder"></span> 市场<br/>
+          <span class="fui-folder"></span> 社交媒体<br/>
+          <span class="fui-folder"></span> 机构<br/>
+        </p>
+        <br>
+        <h6><span class="fui-arrow-right"></span> 热门帖子</h6>
+        <br>
+        <div class="pop-posts">
+          <p><img src="/public/img/post-thumb02.jpg" width="70" height="70" alt=""> <b>GAME ON!</b> <br/> By: C. Alvarez <br/> 12 comments</p>
+        </div>
+        <div class="pop-posts">
+          <p><img src="/public/img/post-thumb03.jpg" width="70" height="70" alt=""> <b>RED DIAMOND</b> <br/> By: C. Alvarez <br/> 12 comments</p>
+        </div>
+        <div class="pop-posts">
+          <p><img src="/public/img/post-thumb01.jpg" width="70" height="70" alt=""> <b>FLAT DESIGN ALWAYS</b> <br/> By: C. Alvarez <br/> 12 comments</p>
+        </div>
+        <br>
+        <h6><span class="fui-arrow-right"></span> 档案</h6>
+        <p>
+          <span class="fui-calendar"></span> 10月 <span class="label label-default">12</span><br/>
+          <span class="fui-calendar"></span> 9月 <span class="label label-default">10</span><br/>
+          <span class="fui-calendar"></span> 8月 <span class="label label-default">19</span><br/>
+          <span class="fui-calendar"></span> 7月 <span class="label label-default">8</span><br/>
+          <span class="fui-calendar"></span> 6月 <span class="label label-default">12</span><br/>
+        </p>
+        <br>
+        <h6><span class="fui-arrow-right"></span> 标签</h6>
+        <div class="tagsinput " style="height: 100%;">
+          <span class="tag"><span>Design&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Wordpress&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Media&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Agency&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Javascript&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Flat&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Photo&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Audio&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <span class="tag"><span>Tips&nbsp;&nbsp;</span><a class="tagsinput-remove-link"></a></span>
+          <input id="tags1382559408818_tag" value="" data-default="" style="color: rgb(102, 102, 102); width: 7px;">
+        </div>
+
+      </div>
+      <!-- col-lg-4 / Sidebar -->
+
+
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+
+{% endblock %}
