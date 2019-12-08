@@ -1,0 +1,13 @@
+{% extends "common.nj" %}
+
+{% block mainContent %}
+
+<div>
+<ul>
+  {% for item  in cooks %}
+  <li>{{ item.name }}: {{ item.img }}</li>
+  {% endfor %}
+</ul>
+</div>
+
+{% endblock %}

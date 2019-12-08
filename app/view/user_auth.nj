@@ -1,0 +1,30 @@
+{% extends "common.nj" %}
+
+{% block mainContent %}
+
+  <div class="container ">
+    user_auth
+  </div>
+
+{% endblock %}
+
+{% block customFooter %}
+  <script>
+    $(functon() {
+      $('#avatarPic').bind('click', function () {
+        $('#avatarBtn').click();
+      });
+      $('#avatarBtn').bind('change', function (e) {
+        if (window.FileReader) {
+          var reader = new FileReader();
+          reader.readAsDataURL(e.target.files[0]);
+          //监听文件读取结束后事件
+          reader.onloadend = function (e) {
+            $('#avatarPic').attr("src", e.target.result); //e.target.result就是最后的路径地址
+          };
+        }
+      });
+
+    })
+  </script>
+{% endblock %}

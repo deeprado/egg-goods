@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports = (options, app) => {
-  console.log(app);
   return async function robotMiddleware(ctx, next) {
     const source = ctx.get('user-agent') || '';
     const match = options.ua.some(ua => ua.test(source));

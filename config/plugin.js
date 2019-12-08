@@ -31,7 +31,7 @@ module.exports = {
     package: 'egg-validate',
   },
   sequelize: {
-    enable: true,
+    enable: false,
     package: 'egg-sequelize',
   },
   mysql: {

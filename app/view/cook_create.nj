@@ -1,0 +1,61 @@
+{% extends "common.nj" %}
+
+{% block customHeader %}
+  <link rel="stylesheet" type="text/css" href="/public/webuploader/webuploader.css">
+  <link rel="stylesheet" type="text/css" href="/public/css/webuploader.module.css">
+{% endblock %}
+
+{% block mainContent %}
+
+  <div>
+    <form action="/cook/add" method="post" >
+      <input type="hidden" name="_csrf" id="_csrf" value="{{ csrf }}">
+      <div>
+        <label>名称： <input typt="text" value="" name="name"/></label>
+        <label>名称： <input typt="text" value="" name="name"/></label>
+      </div>
+      <div id="uploader" class="wu-example">
+        <div class="queueList">
+          <div id="dndArea" class="placeholder">
+            <div id="filePicker" class="webuploader-container">
+              <div class="webuploader-pick">点击选择图片</div>
+              <div id="rt_rt_1drijh55ok45b363pa10dlfc31" style="position: absolute; top: 0px; left: 472.6px; width: 168px; height: 44px; overflow: hidden; bottom: auto; right: auto;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*">
+                <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+              </div>
+            </div>
+            <p>或将照片拖到这里，单次最多可选300张</p>
+          </div>
+          <ul class="filelist"></ul>
+        </div>
+        <div class="statusBar" style="display:none;">
+          <div class="progress" style="display: none;">
+            <span class="text">0%</span>
+            <span class="percentage" style="width: 0%;"></span>
+          </div>
+          <div class="info">共0张（0B），已上传0张</div>
+          <div class="btns">
+            <div id="filePicker2" class="webuploader-container">
+              <div class="webuploader-pick">继续添加</div>
+              <div id="rt_rt_1drijh55q1ftl19g81pqs7br9nk6" style="position: absolute; top: 0px; left: 0px; width: 38px; height: 2px; overflow: hidden; bottom: auto; right: auto;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*">
+                <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+              </div>
+            </div>
+            <div class="uploadBtn state-pedding">开始上传</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <input type="submit" name="" value="提交"/>
+      </div>
+
+    </form>
+  </div>
+
+{% endblock %}
+
+{% block customFooter %}
+  <script type="text/javascript" src="/public/webuploader/webuploader.html5only.min.js"></script>
+  <script type="text/javascript" src="/public/webuploader/webuploader.min.js"></script>
+  <script type="text/javascript" src="/public/js/webuploader.module.js"></script>
+
+{% endblock %}

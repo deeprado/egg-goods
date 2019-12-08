@@ -1,6 +1,6 @@
 {% extends "common.nj" %}
 
-{% block customCss %}
+{% block customHeader %}
   <link href="/public/css/pricing-table-global.css" rel="stylesheet" />
 {% endblock %}
 

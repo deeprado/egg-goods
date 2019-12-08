@@ -16,11 +16,18 @@
 
     <!-- Libraries CSS Files -->
     <link href="/public/lib/flat-ui/css/flat-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- Main Stylesheet File -->
     <link href="/public/css/style.css" rel="stylesheet">
 
-     {% block customCss %}{% endblock %}
+    <style>
+
+      .right {
+        float: right;
+      }
+    </style>
+    {% block customHeader %}{% endblock %}
   </head>
 
   <body>
@@ -70,13 +77,13 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a href="portfolio.html">Portfolio</a>
+                  <a href="/portfolio">全部</a>
                 </li>
                 <li>
-                  <a href="portfolio4.html">Portfolio 4 Columns</a>
+                  <a href="/portfolio/four">四列</a>
                 </li>
                 <li>
-                  <a href="project-single.html">Single Project</a>
+                  <a href="/portfolio/single">单个</a>
                 </li>
               </ul>
             </li>
@@ -88,6 +95,77 @@
             </li>
 
           </ul>
+
+          <div class="right">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               style="height: 60px">
+                  <img alt="" class="img-circle" src="/public/avatar/default.jpg" width="38px" height="38px"/>
+                  <span style="font-size: 15px">
+                    <i>xxxxx</i>
+                  </span>
+                </a>
+                <div class="dropdown-menu pull-right"
+                                 style="background: #FFFFFF;width: 320px;overflow: hidden">
+                  <div style="margin-top: 16px;border-bottom: 1px solid #eeeeee">
+                    <div style="text-align: center">
+                      <img class="img-circle" src="/public/avatar/default.jpg"
+                                             style="width: 38px;height: 38px;"/>
+                    </div>
+                    <div style="color: #323534;text-align: center;line-height: 36px;font-size: 15px">
+                      <span>{{ctx.session.username}}</span>
+                    </div>
+                  </div>
+
+                  <div class="row" style="margin-left: 15px;margin-right: 15px;margin-top: 10px">
+                    <div class="col-md-4 text-center grid">
+                      <i class="fa fa-user" style="font-size: 25px;line-height: 45px;"></i>
+                      <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            个人中心</p>
+                    </div>
+                    <div class="col-md-4 text-center grid">
+                      <i class="fa fa-gear" style="font-size: 25px;line-height: 45px;"></i>
+                      <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            账号管理</p>
+                    </div>
+                    <div class="col-md-4 text-center grid">
+                      <i class="fa fa-key" style="font-size: 25px;line-height: 45px;"></i>
+                      <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            密码修改</p>
+                    </div>
+                  </div>
+
+                  <div class="row" style="margin-left: 15px;margin-right: 15px;margin-top: 10px">
+                    <div class="col-md-4 text-center grid">
+                      <i class="fa fa-user-circle" style="font-size: 25px;line-height: 45px;"></i>
+                      <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            修改头像</p>
+                    </div>
+                    <div class="col-md-4 text-center grid">
+                      <i class="fa fa-comments" style="font-size: 25px;line-height: 45px;"></i>
+                      <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            消息</p>
+                    </div>
+                    <div class="col-md-4 text-center grid">
+                      <i class="fa fa-heart-o" style="font-size: 25px;line-height: 45px;"></i>
+                      <p style="padding: 0px;margin-top: 6px;margin-bottom: 10px;font-size: 12px">
+                                            帮助中心</p>
+                    </div>
+                  </div>
+
+                  <div class="row" style="margin-top: 20px">
+                    <div class="text-center"
+                                         style="padding: 15px;margin: 0px;background: #f6f5f5;color: #323534;">
+                      <i class="fa fa-sign-out"></i> 退出登入界面
+                                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
         </div>
         <!--/.nav-collapse -->
       </div>
@@ -152,6 +230,20 @@
 
     <!-- Template Main Javascript File -->
     <script src="/public/js/main.js"></script>
+
+    <script>
+
+      $(function () {
+        $(".dropdown").mouseover(function () {
+          $(this).addClass("open");
+        });
+
+        $(".dropdown").mouseleave(function () {
+          $(this).removeClass("open");
+        })
+      })
+    </script>
+    {% block customFooter %}{% endblock %}
 
   </body>
 </html>

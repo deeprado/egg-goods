@@ -10,9 +10,9 @@ module.exports = appInfo => {
       dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
       database: 'goods',
       host: 'localhost',
-      port: '3306',
+      port: '3310',
       username: 'root',
-      password: '',
+      password: '111111',
     },
   };
 };

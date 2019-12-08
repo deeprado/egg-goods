@@ -19,9 +19,11 @@
     "egg-validate": "^1.0.0",
     "egg-view-nunjucks": "^2.2.0",
     "egg-weapp-sdk": "^1.1.1",
-    "moment": "^2.17.1",
+    "moment": "^2.24.0",
     "mysql": "^2.13.0",
-    "mysql2": "^2.0.1"
+    "mysql2": "^2.0.1",
+    "mz": "^2.7.0",
+    "svg-captcha": "^1.4.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -30,8 +32,8 @@
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
-    "supertest": "^3.0.0",
-    "eslint-config-egg": "^7.1.0"
+    "eslint-config-egg": "^7.1.0",
+    "supertest": "^3.0.0"
   },
   "engines": {
     "node": ">=10.0.0"

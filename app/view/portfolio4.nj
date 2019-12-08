@@ -3,7 +3,6 @@
 {% block mainContent %}
 
 
-
   <!-- Portfolio Section -->
   <div class="container">
     <div class="row centered">

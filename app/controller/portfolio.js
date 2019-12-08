@@ -11,6 +11,18 @@ class PortfolioController extends Controller {
     const data = { name: 'egg' };
     await ctx.render('portfolio', data);
   }
+
+  async four() {
+    const { ctx } = this;
+    const data = { name: 'egg' };
+    await ctx.render('portfolio4', data);
+  }
+
+  async single() {
+    const { ctx } = this;
+    const data = { name: 'egg' };
+    await ctx.render('portfolio-single', data);
+  }
 }
 
 module.exports = PortfolioController;
